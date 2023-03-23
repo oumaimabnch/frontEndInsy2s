@@ -1,17 +1,16 @@
-import './App.css';
-import Appbar from './components/Appbar';
-///import PasswordForm from './components/PasswordForm';
+// project import
+import Routes from 'routes';
+import ThemeCustomization from 'themes';
+import ScrollTop from 'components/ScrollTop';
 
-import Consultant from './components/Consultant';
- 
-function App() {
-  return (
-    <div className="App">
-      <Appbar/>
-      <Consultant/> 
-      
-    </div>
-  );
-}
+// ==============================|| APP - THEME, ROUTER, LOCAL  ||============================== //
+
+const App = () => (
+    <ThemeCustomization>
+        <ScrollTop>
+            <Routes />
+        </ScrollTop>
+    </ThemeCustomization>
+);
 
 export default App;
